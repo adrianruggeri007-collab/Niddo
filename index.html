@@ -193,12 +193,14 @@
             box.style.display = 'none';
             return;
         }
-        const pass = prompt("Ingresá la contraseña de propietario:");
-        if (pass === ADMIN_CODE) {
-            box.style.display = 'block';
-        } else {
-            alert("Contraseña incorrecta.");
-        }
+           const pass = prompt("Ingresá la contraseña de propietario:");
+    const ADMIN_CODE = "adrian";
+    if (pass === ADMIN_CODE) {
+      box.style.display = 'block';
+    } else {
+      alert("Contraseña incorrecta.");
+    }
+
     }
 
     function deleteBooking(id) {
